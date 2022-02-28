@@ -1,0 +1,2576 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x8C445377F96369FFb857EDEf0233e32f55100390",
+      "txHash": "0x14332234d9a33d8839bdd14c5161d9406c4fce2a0423dc759b22dd1e8e8b4c8e",
+      "kind": "uups"
+    },
+    {
+      "address": "0xa41239135a7688AC9514cdfDC5326c0fa1349eDD",
+      "txHash": "0x66134dab748395715cf9094a801cbb6c2a92d383ef0d9e90498f6326c7db5b42",
+      "kind": "uups"
+    },
+    {
+      "address": "0xd7272a593650f9bf975A393131dd85fE848208e6",
+      "txHash": "0x0e35db090c363dd59cc82d33a19999e7f3994910fe87fa5b17dec5b01f577889",
+      "kind": "uups"
+    },
+    {
+      "address": "0x2eC7D604D23464ac0B2642f6BA336825915A9c39",
+      "txHash": "0x72b44830662e6567a869f6ec6c602735fafe4dbef72dea6f37ef717b6c38c551",
+      "kind": "uups"
+    },
+    {
+      "address": "0x091d0F57C7e8140654b326aD677ea5EB3beDbe28",
+      "txHash": "0x12e53378e666a8c959fe20c369cdbf5e4330d6261e72062a9d63aa2b439b6788",
+      "kind": "uups"
+    },
+    {
+      "address": "0xA39d65fdCED45D79dd8955e9F6eDbc9E0F328F8E",
+      "txHash": "0x75c46b93ed6dcfd4453b796e31f6522584f0eb037a296f886ddd197f428903f7",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "1474648bf488537f01fa390696f73dd42ca6e39bc3ffb381a1c37b04d422c741": {
+      "address": "0x549C3A644d5479e31324cc8026DC5984EbdDB29D",
+      "txHash": "0x4c9818bb1075bb54feca619cf9d02dd189211b39a1fe89563e4b5da0be44f31a",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "Roulette",
+            "label": "payout",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:67"
+          },
+          {
+            "contract": "Roulette",
+            "label": "minBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:68"
+          },
+          {
+            "contract": "Roulette",
+            "label": "maxBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:69"
+          },
+          {
+            "contract": "Roulette",
+            "label": "numbersByKindOfBet",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:71"
+          },
+          {
+            "contract": "Roulette",
+            "label": "rounds",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))",
+            "src": "..\\project:\\contracts\\Roulette.sol:73"
+          },
+          {
+            "contract": "Roulette",
+            "label": "currentUserEpoch",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:74"
+          },
+          {
+            "contract": "Roulette",
+            "label": "admin",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:76"
+          },
+          {
+            "contract": "Roulette",
+            "label": "operator",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:77"
+          },
+          {
+            "contract": "Roulette",
+            "label": "counter",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:78"
+          },
+          {
+            "contract": "Roulette",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:79"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomRoundId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:80"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomNumUpdateAllowance",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:82"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomGenerator",
+            "type": "t_contract(IRandomGenerator)4226",
+            "src": "..\\project:\\contracts\\Roulette.sol:83"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenStaked",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:86"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenDecimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\Roulette.sol:87"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint8,t_uint8)": {
+            "label": "mapping(uint8 => uint8)"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_mapping(t_uint8,t_uint256)": {
+            "label": "mapping(uint8 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Roulette.Round))"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_uint256,t_struct(Round)1963_storage)": {
+            "label": "mapping(uint256 => struct Roulette.Round)"
+          },
+          "t_struct(Round)1963_storage": {
+            "label": "struct Roulette.Round",
+            "members": [
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              },
+              {
+                "label": "bets",
+                "type": "t_array(t_struct(Bet)1974_storage)dyn_storage"
+              },
+              {
+                "label": "totalAmountBet",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalRewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "treasuryCollections",
+                "type": "t_uint256"
+              },
+              {
+                "label": "oracleCalled",
+                "type": "t_bool"
+              },
+              {
+                "label": "winningNumber",
+                "type": "t_uint8"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "totalAmountInSlabs",
+                "type": "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))"
+              }
+            ]
+          },
+          "t_array(t_struct(Bet)1974_storage)dyn_storage": {
+            "label": "struct Roulette.Bet[]"
+          },
+          "t_struct(Bet)1974_storage": {
+            "label": "struct Roulette.Bet",
+            "members": [
+              {
+                "label": "betType",
+                "type": "t_uint8"
+              },
+              {
+                "label": "differentiator",
+                "type": "t_uint8"
+              },
+              {
+                "label": "numbers",
+                "type": "t_array(t_uint8)dyn_storage"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))": {
+            "label": "mapping(uint8 => mapping(uint8 => uint256))"
+          },
+          "t_array(t_uint8)dyn_storage": {
+            "label": "uint8[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_contract(IRandomGenerator)4226": {
+            "label": "contract IRandomGenerator"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "04d6ae826ccbe312aaca2be40e6b7e1a1fc7e576ba326e995af94f86fb9bacee": {
+      "address": "0x2a97Ef419694c763D27534c32960e11E872F4946",
+      "txHash": "0xa04ccde89ea3586378c42eb8179e7efb40ca982112ad536317bbf17af11a641c",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "Roulette",
+            "label": "payout",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:67"
+          },
+          {
+            "contract": "Roulette",
+            "label": "minBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:68"
+          },
+          {
+            "contract": "Roulette",
+            "label": "maxBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:69"
+          },
+          {
+            "contract": "Roulette",
+            "label": "numbersByKindOfBet",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:71"
+          },
+          {
+            "contract": "Roulette",
+            "label": "rounds",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))",
+            "src": "..\\project:\\contracts\\Roulette.sol:73"
+          },
+          {
+            "contract": "Roulette",
+            "label": "currentUserEpoch",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:74"
+          },
+          {
+            "contract": "Roulette",
+            "label": "admin",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:76"
+          },
+          {
+            "contract": "Roulette",
+            "label": "operator",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:77"
+          },
+          {
+            "contract": "Roulette",
+            "label": "counter",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:78"
+          },
+          {
+            "contract": "Roulette",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:79"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomRoundId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:80"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomNumUpdateAllowance",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:82"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomGenerator",
+            "type": "t_contract(IRandomGenerator)4390",
+            "src": "..\\project:\\contracts\\Roulette.sol:83"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenStaked",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:86"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenDecimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\Roulette.sol:87"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint8,t_uint8)": {
+            "label": "mapping(uint8 => uint8)"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_mapping(t_uint8,t_uint256)": {
+            "label": "mapping(uint8 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Roulette.Round))"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_uint256,t_struct(Round)1963_storage)": {
+            "label": "mapping(uint256 => struct Roulette.Round)"
+          },
+          "t_struct(Round)1963_storage": {
+            "label": "struct Roulette.Round",
+            "members": [
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              },
+              {
+                "label": "bets",
+                "type": "t_array(t_struct(Bet)1974_storage)dyn_storage"
+              },
+              {
+                "label": "totalAmountBet",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalRewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "treasuryCollections",
+                "type": "t_uint256"
+              },
+              {
+                "label": "oracleCalled",
+                "type": "t_bool"
+              },
+              {
+                "label": "winningNumber",
+                "type": "t_uint8"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "totalAmountInSlabs",
+                "type": "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))"
+              }
+            ]
+          },
+          "t_array(t_struct(Bet)1974_storage)dyn_storage": {
+            "label": "struct Roulette.Bet[]"
+          },
+          "t_struct(Bet)1974_storage": {
+            "label": "struct Roulette.Bet",
+            "members": [
+              {
+                "label": "betType",
+                "type": "t_uint8"
+              },
+              {
+                "label": "differentiator",
+                "type": "t_uint8"
+              },
+              {
+                "label": "numbers",
+                "type": "t_array(t_uint8)dyn_storage"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))": {
+            "label": "mapping(uint8 => mapping(uint8 => uint256))"
+          },
+          "t_array(t_uint8)dyn_storage": {
+            "label": "uint8[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_contract(IRandomGenerator)4390": {
+            "label": "contract IRandomGenerator"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "0c7417dd25b383e9758da5b73726239c2bf31d494785acf70ccbe0a8df183ee7": {
+      "address": "0xAf6249Ee1423b9bcc498a7Cc8bC1F1592271C2d9",
+      "txHash": "0x1a2189e4e2eb2ea6d76800c457e6d29617523d75cbe4adfcde2fcf8a58c5ddd9",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "Roulette",
+            "label": "payout",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:67"
+          },
+          {
+            "contract": "Roulette",
+            "label": "minBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:68"
+          },
+          {
+            "contract": "Roulette",
+            "label": "maxBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:69"
+          },
+          {
+            "contract": "Roulette",
+            "label": "numbersByKindOfBet",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:71"
+          },
+          {
+            "contract": "Roulette",
+            "label": "rounds",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))",
+            "src": "..\\project:\\contracts\\Roulette.sol:73"
+          },
+          {
+            "contract": "Roulette",
+            "label": "currentUserEpoch",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:74"
+          },
+          {
+            "contract": "Roulette",
+            "label": "admin",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:76"
+          },
+          {
+            "contract": "Roulette",
+            "label": "operator",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:77"
+          },
+          {
+            "contract": "Roulette",
+            "label": "counter",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:78"
+          },
+          {
+            "contract": "Roulette",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:79"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomRoundId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:80"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomNumUpdateAllowance",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:82"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomGenerator",
+            "type": "t_contract(IRandomGenerator)4390",
+            "src": "..\\project:\\contracts\\Roulette.sol:83"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenStaked",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:86"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenDecimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\Roulette.sol:87"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint8,t_uint8)": {
+            "label": "mapping(uint8 => uint8)"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_mapping(t_uint8,t_uint256)": {
+            "label": "mapping(uint8 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Roulette.Round))"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_uint256,t_struct(Round)1963_storage)": {
+            "label": "mapping(uint256 => struct Roulette.Round)"
+          },
+          "t_struct(Round)1963_storage": {
+            "label": "struct Roulette.Round",
+            "members": [
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              },
+              {
+                "label": "bets",
+                "type": "t_array(t_struct(Bet)1974_storage)dyn_storage"
+              },
+              {
+                "label": "totalAmountBet",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalRewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "treasuryCollections",
+                "type": "t_uint256"
+              },
+              {
+                "label": "oracleCalled",
+                "type": "t_bool"
+              },
+              {
+                "label": "winningNumber",
+                "type": "t_uint8"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "totalAmountInSlabs",
+                "type": "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))"
+              }
+            ]
+          },
+          "t_array(t_struct(Bet)1974_storage)dyn_storage": {
+            "label": "struct Roulette.Bet[]"
+          },
+          "t_struct(Bet)1974_storage": {
+            "label": "struct Roulette.Bet",
+            "members": [
+              {
+                "label": "betType",
+                "type": "t_uint8"
+              },
+              {
+                "label": "differentiator",
+                "type": "t_uint8"
+              },
+              {
+                "label": "numbers",
+                "type": "t_array(t_uint8)dyn_storage"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))": {
+            "label": "mapping(uint8 => mapping(uint8 => uint256))"
+          },
+          "t_array(t_uint8)dyn_storage": {
+            "label": "uint8[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_contract(IRandomGenerator)4390": {
+            "label": "contract IRandomGenerator"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "e8f0ad31545a38df8ba8156916581105df7450b13274027939c548786645d10e": {
+      "address": "0xb23787E83966FBB3d6A42a825b5c6e6969f59DBD",
+      "txHash": "0x0a1eca200803fbfd462dcd33b1c0cb912e5440e9b441851b47ff43b621c6684c",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "Roulette",
+            "label": "payout",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:67"
+          },
+          {
+            "contract": "Roulette",
+            "label": "minBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:68"
+          },
+          {
+            "contract": "Roulette",
+            "label": "maxBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:69"
+          },
+          {
+            "contract": "Roulette",
+            "label": "numbersByKindOfBet",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:71"
+          },
+          {
+            "contract": "Roulette",
+            "label": "rounds",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))",
+            "src": "..\\project:\\contracts\\Roulette.sol:73"
+          },
+          {
+            "contract": "Roulette",
+            "label": "currentUserEpoch",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:74"
+          },
+          {
+            "contract": "Roulette",
+            "label": "admin",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:76"
+          },
+          {
+            "contract": "Roulette",
+            "label": "operator",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:77"
+          },
+          {
+            "contract": "Roulette",
+            "label": "counter",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:78"
+          },
+          {
+            "contract": "Roulette",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:79"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomRoundId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:80"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomNumUpdateAllowance",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:82"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomGenerator",
+            "type": "t_contract(IRandomGenerator)4476",
+            "src": "..\\project:\\contracts\\Roulette.sol:83"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenStaked",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:86"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenDecimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\Roulette.sol:87"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint8,t_uint8)": {
+            "label": "mapping(uint8 => uint8)"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_mapping(t_uint8,t_uint256)": {
+            "label": "mapping(uint8 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Roulette.Round))"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_uint256,t_struct(Round)1963_storage)": {
+            "label": "mapping(uint256 => struct Roulette.Round)"
+          },
+          "t_struct(Round)1963_storage": {
+            "label": "struct Roulette.Round",
+            "members": [
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              },
+              {
+                "label": "bets",
+                "type": "t_array(t_struct(Bet)1974_storage)dyn_storage"
+              },
+              {
+                "label": "totalAmountBet",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalRewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "treasuryCollections",
+                "type": "t_uint256"
+              },
+              {
+                "label": "oracleCalled",
+                "type": "t_bool"
+              },
+              {
+                "label": "winningNumber",
+                "type": "t_uint8"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "totalAmountInSlabs",
+                "type": "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))"
+              }
+            ]
+          },
+          "t_array(t_struct(Bet)1974_storage)dyn_storage": {
+            "label": "struct Roulette.Bet[]"
+          },
+          "t_struct(Bet)1974_storage": {
+            "label": "struct Roulette.Bet",
+            "members": [
+              {
+                "label": "betType",
+                "type": "t_uint8"
+              },
+              {
+                "label": "differentiator",
+                "type": "t_uint8"
+              },
+              {
+                "label": "numbers",
+                "type": "t_array(t_uint8)dyn_storage"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))": {
+            "label": "mapping(uint8 => mapping(uint8 => uint256))"
+          },
+          "t_array(t_uint8)dyn_storage": {
+            "label": "uint8[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_contract(IRandomGenerator)4476": {
+            "label": "contract IRandomGenerator"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "4ee5a20063eefc4396967be7667fb52ac97087d5a728028740078afde03c4d26": {
+      "address": "0xACcD7AbE4A64e42f1Db8c310658d081918C8edEE",
+      "txHash": "0x42a4dfcece457245d72610d22110efa913edd60516388258305f78ff7dbd4e63",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "Roulette",
+            "label": "payout",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:67"
+          },
+          {
+            "contract": "Roulette",
+            "label": "minBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:68"
+          },
+          {
+            "contract": "Roulette",
+            "label": "maxBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:69"
+          },
+          {
+            "contract": "Roulette",
+            "label": "numbersByKindOfBet",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:71"
+          },
+          {
+            "contract": "Roulette",
+            "label": "rounds",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))",
+            "src": "..\\project:\\contracts\\Roulette.sol:73"
+          },
+          {
+            "contract": "Roulette",
+            "label": "currentUserEpoch",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:74"
+          },
+          {
+            "contract": "Roulette",
+            "label": "admin",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:76"
+          },
+          {
+            "contract": "Roulette",
+            "label": "operator",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:77"
+          },
+          {
+            "contract": "Roulette",
+            "label": "counter",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:78"
+          },
+          {
+            "contract": "Roulette",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:79"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomRoundId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:80"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomNumUpdateAllowance",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:82"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomGenerator",
+            "type": "t_contract(IRandomGenerator)4476",
+            "src": "..\\project:\\contracts\\Roulette.sol:83"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenStaked",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:86"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenDecimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\Roulette.sol:87"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint8,t_uint8)": {
+            "label": "mapping(uint8 => uint8)"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_mapping(t_uint8,t_uint256)": {
+            "label": "mapping(uint8 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Roulette.Round))"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_uint256,t_struct(Round)1963_storage)": {
+            "label": "mapping(uint256 => struct Roulette.Round)"
+          },
+          "t_struct(Round)1963_storage": {
+            "label": "struct Roulette.Round",
+            "members": [
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              },
+              {
+                "label": "bets",
+                "type": "t_array(t_struct(Bet)1974_storage)dyn_storage"
+              },
+              {
+                "label": "totalAmountBet",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalRewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "treasuryCollections",
+                "type": "t_uint256"
+              },
+              {
+                "label": "oracleCalled",
+                "type": "t_bool"
+              },
+              {
+                "label": "winningNumber",
+                "type": "t_uint8"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "totalAmountInSlabs",
+                "type": "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))"
+              }
+            ]
+          },
+          "t_array(t_struct(Bet)1974_storage)dyn_storage": {
+            "label": "struct Roulette.Bet[]"
+          },
+          "t_struct(Bet)1974_storage": {
+            "label": "struct Roulette.Bet",
+            "members": [
+              {
+                "label": "betType",
+                "type": "t_uint8"
+              },
+              {
+                "label": "differentiator",
+                "type": "t_uint8"
+              },
+              {
+                "label": "numbers",
+                "type": "t_array(t_uint8)dyn_storage"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))": {
+            "label": "mapping(uint8 => mapping(uint8 => uint256))"
+          },
+          "t_array(t_uint8)dyn_storage": {
+            "label": "uint8[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_contract(IRandomGenerator)4476": {
+            "label": "contract IRandomGenerator"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "859090cb4b32a9f46d57ace6ee4edd433ed23a21664335e9d988d65f4f17db5a": {
+      "address": "0xf02daa1B5DBD6D6A4DD7131083b75954bE767d5d",
+      "txHash": "0xf32e9c530398103efe0b0547d22e548d6b308fb721f2204cbaa817a6f7d1acfe",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "Roulette",
+            "label": "payout",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:67"
+          },
+          {
+            "contract": "Roulette",
+            "label": "minBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:68"
+          },
+          {
+            "contract": "Roulette",
+            "label": "maxBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:69"
+          },
+          {
+            "contract": "Roulette",
+            "label": "numbersByKindOfBet",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:71"
+          },
+          {
+            "contract": "Roulette",
+            "label": "rounds",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))",
+            "src": "..\\project:\\contracts\\Roulette.sol:73"
+          },
+          {
+            "contract": "Roulette",
+            "label": "currentUserEpoch",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:74"
+          },
+          {
+            "contract": "Roulette",
+            "label": "admin",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:76"
+          },
+          {
+            "contract": "Roulette",
+            "label": "operator",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:77"
+          },
+          {
+            "contract": "Roulette",
+            "label": "counter",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:78"
+          },
+          {
+            "contract": "Roulette",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:79"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomRoundId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:80"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomNumUpdateAllowance",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:82"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomGenerator",
+            "type": "t_contract(IRandomGenerator)3979",
+            "src": "..\\project:\\contracts\\Roulette.sol:83"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenStaked",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:86"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenDecimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\Roulette.sol:87"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint8,t_uint8)": {
+            "label": "mapping(uint8 => uint8)"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_mapping(t_uint8,t_uint256)": {
+            "label": "mapping(uint8 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Roulette.Round))"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_uint256,t_struct(Round)1963_storage)": {
+            "label": "mapping(uint256 => struct Roulette.Round)"
+          },
+          "t_struct(Round)1963_storage": {
+            "label": "struct Roulette.Round",
+            "members": [
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              },
+              {
+                "label": "bets",
+                "type": "t_array(t_struct(Bet)1974_storage)dyn_storage"
+              },
+              {
+                "label": "totalAmountBet",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalRewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "treasuryCollections",
+                "type": "t_uint256"
+              },
+              {
+                "label": "oracleCalled",
+                "type": "t_bool"
+              },
+              {
+                "label": "winningNumber",
+                "type": "t_uint8"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "totalAmountInSlabs",
+                "type": "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))"
+              }
+            ]
+          },
+          "t_array(t_struct(Bet)1974_storage)dyn_storage": {
+            "label": "struct Roulette.Bet[]"
+          },
+          "t_struct(Bet)1974_storage": {
+            "label": "struct Roulette.Bet",
+            "members": [
+              {
+                "label": "betType",
+                "type": "t_uint8"
+              },
+              {
+                "label": "differentiator",
+                "type": "t_uint8"
+              },
+              {
+                "label": "numbers",
+                "type": "t_array(t_uint8)dyn_storage"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))": {
+            "label": "mapping(uint8 => mapping(uint8 => uint256))"
+          },
+          "t_array(t_uint8)dyn_storage": {
+            "label": "uint8[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_contract(IRandomGenerator)3979": {
+            "label": "contract IRandomGenerator"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "4e5eda57a1d4352382c926d34a6734b716e0d9f2620600173375c8660e8d63bf": {
+      "address": "0x6b76D8F4B95245F3c6D649470Fe7d47Fc5271dBc",
+      "txHash": "0x8a0c00b57945e5d2a74a665aed16e0edf293290d3e067b71b75a55b5103c0f44",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "Roulette",
+            "label": "payout",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:67"
+          },
+          {
+            "contract": "Roulette",
+            "label": "minBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:68"
+          },
+          {
+            "contract": "Roulette",
+            "label": "maxBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:69"
+          },
+          {
+            "contract": "Roulette",
+            "label": "numbersByKindOfBet",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:71"
+          },
+          {
+            "contract": "Roulette",
+            "label": "rounds",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))",
+            "src": "..\\project:\\contracts\\Roulette.sol:73"
+          },
+          {
+            "contract": "Roulette",
+            "label": "currentUserEpoch",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:74"
+          },
+          {
+            "contract": "Roulette",
+            "label": "admin",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:76"
+          },
+          {
+            "contract": "Roulette",
+            "label": "operator",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:77"
+          },
+          {
+            "contract": "Roulette",
+            "label": "counter",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:78"
+          },
+          {
+            "contract": "Roulette",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:79"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomRoundId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:80"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomNumUpdateAllowance",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:82"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomGenerator",
+            "type": "t_contract(IRandomGenerator)3974",
+            "src": "..\\project:\\contracts\\Roulette.sol:83"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenStaked",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:86"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenDecimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\Roulette.sol:87"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint8,t_uint8)": {
+            "label": "mapping(uint8 => uint8)"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_mapping(t_uint8,t_uint256)": {
+            "label": "mapping(uint8 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1963_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Roulette.Round))"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_uint256,t_struct(Round)1963_storage)": {
+            "label": "mapping(uint256 => struct Roulette.Round)"
+          },
+          "t_struct(Round)1963_storage": {
+            "label": "struct Roulette.Round",
+            "members": [
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              },
+              {
+                "label": "bets",
+                "type": "t_array(t_struct(Bet)1974_storage)dyn_storage"
+              },
+              {
+                "label": "totalAmountBet",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalRewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "treasuryCollections",
+                "type": "t_uint256"
+              },
+              {
+                "label": "oracleCalled",
+                "type": "t_bool"
+              },
+              {
+                "label": "winningNumber",
+                "type": "t_uint8"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "totalAmountInSlabs",
+                "type": "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))"
+              }
+            ]
+          },
+          "t_array(t_struct(Bet)1974_storage)dyn_storage": {
+            "label": "struct Roulette.Bet[]"
+          },
+          "t_struct(Bet)1974_storage": {
+            "label": "struct Roulette.Bet",
+            "members": [
+              {
+                "label": "betType",
+                "type": "t_uint8"
+              },
+              {
+                "label": "differentiator",
+                "type": "t_uint8"
+              },
+              {
+                "label": "numbers",
+                "type": "t_array(t_uint8)dyn_storage"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))": {
+            "label": "mapping(uint8 => mapping(uint8 => uint256))"
+          },
+          "t_array(t_uint8)dyn_storage": {
+            "label": "uint8[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_contract(IRandomGenerator)3974": {
+            "label": "contract IRandomGenerator"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "02c6e7d19e92515fce7342ae88c09eb7f5a974f2e14317fd53d0165a2c6dae23": {
+      "address": "0x5606C60D13e5DE5fA7AcEeF7E52f4a48C00ac982",
+      "txHash": "0x2d9b068a72c76682dbd13df600ef0b0c3fa9ef514490d51529d35c092538afce",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "Roulette",
+            "label": "payout",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:73"
+          },
+          {
+            "contract": "Roulette",
+            "label": "minBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:74"
+          },
+          {
+            "contract": "Roulette",
+            "label": "maxBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:75"
+          },
+          {
+            "contract": "Roulette",
+            "label": "numbersByKindOfBet",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:77"
+          },
+          {
+            "contract": "Roulette",
+            "label": "roundInfo",
+            "type": "t_mapping(t_uint256,t_struct(RoundInfo)1981_storage)",
+            "src": "..\\project:\\contracts\\Roulette.sol:79"
+          },
+          {
+            "contract": "Roulette",
+            "label": "counterForUserEpoch",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_uint256))",
+            "src": "..\\project:\\contracts\\Roulette.sol:81"
+          },
+          {
+            "contract": "Roulette",
+            "label": "rounds",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1965_storage))",
+            "src": "..\\project:\\contracts\\Roulette.sol:83"
+          },
+          {
+            "contract": "Roulette",
+            "label": "currentUserEpoch",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:84"
+          },
+          {
+            "contract": "Roulette",
+            "label": "admin",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:86"
+          },
+          {
+            "contract": "Roulette",
+            "label": "operator",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:87"
+          },
+          {
+            "contract": "Roulette",
+            "label": "counter",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:88"
+          },
+          {
+            "contract": "Roulette",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:89"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomRoundId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:90"
+          },
+          {
+            "contract": "Roulette",
+            "label": "totalVolume",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:91"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomNumUpdateAllowance",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:93"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomGenerator",
+            "type": "t_contract(IRandomGenerator)4046",
+            "src": "..\\project:\\contracts\\Roulette.sol:94"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenStaked",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:97"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenDecimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\Roulette.sol:98"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint8,t_uint8)": {
+            "label": "mapping(uint8 => uint8)"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_mapping(t_uint8,t_uint256)": {
+            "label": "mapping(uint8 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(RoundInfo)1981_storage)": {
+            "label": "mapping(uint256 => struct Roulette.RoundInfo)"
+          },
+          "t_struct(RoundInfo)1981_storage": {
+            "label": "struct Roulette.RoundInfo",
+            "members": [
+              {
+                "label": "user",
+                "type": "t_address"
+              },
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_uint256))": {
+            "label": "mapping(address => mapping(uint256 => uint256))"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1965_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Roulette.Round))"
+          },
+          "t_mapping(t_uint256,t_struct(Round)1965_storage)": {
+            "label": "mapping(uint256 => struct Roulette.Round)"
+          },
+          "t_struct(Round)1965_storage": {
+            "label": "struct Roulette.Round",
+            "members": [
+              {
+                "label": "roundId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              },
+              {
+                "label": "bets",
+                "type": "t_array(t_struct(Bet)1976_storage)dyn_storage"
+              },
+              {
+                "label": "totalAmountBet",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalRewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "treasuryCollections",
+                "type": "t_uint256"
+              },
+              {
+                "label": "oracleCalled",
+                "type": "t_bool"
+              },
+              {
+                "label": "winningNumber",
+                "type": "t_uint8"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "totalAmountInSlabs",
+                "type": "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))"
+              }
+            ]
+          },
+          "t_array(t_struct(Bet)1976_storage)dyn_storage": {
+            "label": "struct Roulette.Bet[]"
+          },
+          "t_struct(Bet)1976_storage": {
+            "label": "struct Roulette.Bet",
+            "members": [
+              {
+                "label": "betType",
+                "type": "t_uint8"
+              },
+              {
+                "label": "differentiator",
+                "type": "t_uint8"
+              },
+              {
+                "label": "numbers",
+                "type": "t_array(t_uint8)dyn_storage"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))": {
+            "label": "mapping(uint8 => mapping(uint8 => uint256))"
+          },
+          "t_array(t_uint8)dyn_storage": {
+            "label": "uint8[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_contract(IRandomGenerator)4046": {
+            "label": "contract IRandomGenerator"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "bb1d9025f3bcefefa391b6583725c8edb2758431d23007dd0a5bfcb8bdb13ad1": {
+      "address": "0x8c36429f102D563BF023e2C6cb3187Fe2C6062cA",
+      "txHash": "0x567767820b0cf82af48f43986a36f7e0edc155f0b1cbda3b81c171d0c6ca29fd",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "Roulette",
+            "label": "payout",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:73"
+          },
+          {
+            "contract": "Roulette",
+            "label": "minBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:74"
+          },
+          {
+            "contract": "Roulette",
+            "label": "maxBetAmount",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:75"
+          },
+          {
+            "contract": "Roulette",
+            "label": "numbersByKindOfBet",
+            "type": "t_mapping(t_uint8,t_uint8)",
+            "src": "..\\project:\\contracts\\Roulette.sol:77"
+          },
+          {
+            "contract": "Roulette",
+            "label": "roundInfo",
+            "type": "t_mapping(t_uint256,t_struct(RoundInfo)1981_storage)",
+            "src": "..\\project:\\contracts\\Roulette.sol:79"
+          },
+          {
+            "contract": "Roulette",
+            "label": "rounds",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1965_storage))",
+            "src": "..\\project:\\contracts\\Roulette.sol:81"
+          },
+          {
+            "contract": "Roulette",
+            "label": "currentUserEpoch",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:82"
+          },
+          {
+            "contract": "Roulette",
+            "label": "claimCheckpoint",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\Roulette.sol:83"
+          },
+          {
+            "contract": "Roulette",
+            "label": "admin",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:85"
+          },
+          {
+            "contract": "Roulette",
+            "label": "operator",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:86"
+          },
+          {
+            "contract": "Roulette",
+            "label": "counter",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:87"
+          },
+          {
+            "contract": "Roulette",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:88"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomRoundId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:89"
+          },
+          {
+            "contract": "Roulette",
+            "label": "totalVolume",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:90"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomNumUpdateAllowance",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Roulette.sol:92"
+          },
+          {
+            "contract": "Roulette",
+            "label": "randomGenerator",
+            "type": "t_contract(IRandomGenerator)4191",
+            "src": "..\\project:\\contracts\\Roulette.sol:93"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenStaked",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Roulette.sol:96"
+          },
+          {
+            "contract": "Roulette",
+            "label": "tokenDecimals",
+            "type": "t_uint8",
+            "src": "..\\project:\\contracts\\Roulette.sol:97"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint8,t_uint8)": {
+            "label": "mapping(uint8 => uint8)"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_mapping(t_uint8,t_uint256)": {
+            "label": "mapping(uint8 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(RoundInfo)1981_storage)": {
+            "label": "mapping(uint256 => struct Roulette.RoundInfo)"
+          },
+          "t_struct(RoundInfo)1981_storage": {
+            "label": "struct Roulette.RoundInfo",
+            "members": [
+              {
+                "label": "user",
+                "type": "t_address"
+              },
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Round)1965_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Roulette.Round))"
+          },
+          "t_mapping(t_uint256,t_struct(Round)1965_storage)": {
+            "label": "mapping(uint256 => struct Roulette.Round)"
+          },
+          "t_struct(Round)1965_storage": {
+            "label": "struct Roulette.Round",
+            "members": [
+              {
+                "label": "roundId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              },
+              {
+                "label": "bets",
+                "type": "t_array(t_struct(Bet)1976_storage)dyn_storage"
+              },
+              {
+                "label": "totalAmountBet",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalRewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "treasuryCollections",
+                "type": "t_uint256"
+              },
+              {
+                "label": "oracleCalled",
+                "type": "t_bool"
+              },
+              {
+                "label": "winningNumber",
+                "type": "t_uint8"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              },
+              {
+                "label": "totalAmountInSlabs",
+                "type": "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))"
+              }
+            ]
+          },
+          "t_array(t_struct(Bet)1976_storage)dyn_storage": {
+            "label": "struct Roulette.Bet[]"
+          },
+          "t_struct(Bet)1976_storage": {
+            "label": "struct Roulette.Bet",
+            "members": [
+              {
+                "label": "betType",
+                "type": "t_uint8"
+              },
+              {
+                "label": "differentiator",
+                "type": "t_uint8"
+              },
+              {
+                "label": "numbers",
+                "type": "t_array(t_uint8)dyn_storage"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint8,t_mapping(t_uint8,t_uint256))": {
+            "label": "mapping(uint8 => mapping(uint8 => uint256))"
+          },
+          "t_array(t_uint8)dyn_storage": {
+            "label": "uint8[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_contract(IRandomGenerator)4191": {
+            "label": "contract IRandomGenerator"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    }
+  }
+}

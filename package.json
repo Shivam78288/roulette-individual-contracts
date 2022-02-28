@@ -1,0 +1,21 @@
+{
+  "name": "roulette-individual",
+  "version": "1.0.0",
+  "description": "Decentralised roulette game ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shivam Agrawal",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.5.1",
+    "@openzeppelin/truffle-upgrades": "^1.12.0",
+    "@truffle/hdwallet-provider": "^2.0.3",
+    "dotenv": "^16.0.0",
+    "web3": "^1.7.0"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.21"
+  }
+}
