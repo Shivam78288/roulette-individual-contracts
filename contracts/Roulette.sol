@@ -114,8 +114,7 @@ contract Roulette is
     event ClaimAll(
         address indexed user, 
         uint256 claimCheckpoint, 
-        uint256 reward,
-        uint256[] claimableRounds
+        uint256 reward
         );
     event ClaimTreasury(uint256 amount);
     event PayoutUpdated(
@@ -584,20 +583,31 @@ contract Roulette is
     }
 
     function claimAll() external virtual notContract nonReentrant{
-        (
-            bool isClaimable, 
-            uint256 rewards, 
-            uint256[] memory claimableRounds
-            ) = totalClaimable(msg.sender);
+        (bool isClaimable, uint256 reward) = totalClaimable(msg.sender);
         require(isClaimable, "Not claimable");
         
-        for(uint256 i = 0; i< claimableRounds.length; i++){
-            rounds[msg.sender][claimableRounds[i]].claimed = true;
+        _updateClaimCheckpoint(currentUserEpoch[msg.sender]);
+        _safeTransferToken(address(msg.sender), reward);
+        emit ClaimAll(msg.sender, currentUserEpoch[msg.sender], reward);
+    }
+
+    function _updateClaimCheckpoint(
+        uint256 epoch
+        ) 
+        internal 
+        virtual 
+        notContract 
+    {
+        require(
+            epoch > claimCheckpoint[msg.sender],
+            "Epoch must be greater than the current checkpoint"
+            );
+
+        for(uint256 i = claimCheckpoint[msg.sender].add(1); i <= epoch; i++){
+            rounds[msg.sender][i].claimed = true;
         }
-        
-        _safeTransferToken(address(msg.sender), rewards);
-        claimCheckpoint[msg.sender] = currentUserEpoch[msg.sender];
-        emit ClaimAll(msg.sender, currentUserEpoch[msg.sender], rewards, claimableRounds);
+
+        claimCheckpoint[msg.sender] = epoch;
     }
 
 
@@ -669,37 +679,31 @@ contract Roulette is
         public 
         virtual
         view 
-        returns (bool, uint256, uint256[] memory) 
+        returns (bool, uint256) 
     {
         uint256 totalAmount;
-        uint256 j = 0;
-        uint256[] memory claimableRounds;
+
         for(uint256 i = claimCheckpoint[user].add(1); i <= currentUserEpoch[user]; i++){
             if(!rounds[user][i].claimed){
                 (bool canClaim, uint256 reward) = claimable(user, i);
 
                 if(canClaim){
                     totalAmount = totalAmount.add(reward);
-                    claimableRounds[j] = i;
-                    j++;
                 }
 
                 else if(refundable(user, i)){
                     totalAmount = totalAmount.add(rounds[user][i].totalAmountBet);
-                    claimableRounds[j] = i;
-                    j++;
                 }
             }
             
         }
 
         if(totalAmount == 0){
-            return (false, 0, claimableRounds);
+            return (false, 0);
         }
         
-        return (true, totalAmount, claimableRounds);
+        return (true, totalAmount);
     }
-
     
     function refundable(address user, uint256 epoch) 
     public 
